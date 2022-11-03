@@ -1,0 +1,150 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    text-align: left;
+    font-family: 'Marcellus', serif;
+}
+
+.bg {
+    background-image: url("1348005.jpg");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30%;
+    display: flex;
+
+    
+}
+
+.logo_container {
+    display: flex;
+    flex: 1;
+    height: 200px;
+    margin-top: 300px;
+    background: rgba(37, 37, 37, 0.5);
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+img[src="undraw_handcrafts_tree.svg"] {
+   
+    width: min(200px, 100%);
+}
+
+.logo_text {
+    font-family: 'Caveat', sans-serif;
+    font-size: 4.5rem;
+    color: white;
+    width: min(auto, 100%);
+}
+
+.heading {
+    margin: 50px;
+    position: absolute;
+    left: 40%;
+    width: 40%
+}
+
+h2 {
+    font-size: clamp(1px, 3vw, 2rem);
+    padding-top: 110px;
+}
+
+input:focus {
+    background: rgba(3, 255, 108, 0.3);
+    appearance: none;
+}
+
+input:hover {
+    background: #e0e0e0;
+    box-shadow: 3px 3px rgb(107, 158, 158);
+}
+
+input {
+    border-color: #E5E7EB;
+    border-radius: 5px;
+    box-shadow: 3px 3px #616161;
+    padding: 5px 15px;
+}
+
+input:invalid {
+    border-color: rgba(255, 38, 0);
+}
+
+p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+form+p {
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.inputWrapper {
+    
+   padding-bottom: 20px;
+}
+
+.inputWrapper label {
+    display: block;
+}
+
+.sub {
+    display: flex;
+    gap: 60px;
+}
+
+.sub:nth-child(3) {
+    padding-bottom: 20px;
+    box-shadow:  0px 5px rgba(109, 107, 107, 0.2)
+}
+
+button {
+    font-size: 1rem;
+    font-weight: bold;
+    border-style: none;
+    margin-top: 20px;
+    padding: 10px 50px;
+    background-color: rgb(0, 173, 216);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 1px 2px #616161;
+  
+}
+
+button:hover,button:focus {
+    outline: none;
+    background: #000;
+    color: #fff;
+}
+::placeholder {
+    opacity: 0.6;
+}
+
+p:last-of-type {
+    font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .sub {
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+
+    #handcraft {
+        width: min(120px, 100%);
+    }
+
+    .logo_text {
+        display: none;
+    }
+    button {
+        padding: 10px;
+    }
+
+}
+
